@@ -198,8 +198,8 @@ ul {
 }
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
+  max-width: 1158px;
+  /* padding: 0 15px; */
   margin: 0 auto;
 }
 
@@ -278,34 +278,47 @@ ul {
   cursor: pointer;
 }
 
-.benefits {
+/* .benefits {
   padding: 120px 0;
+} */
+
+.benefits {
+  padding: 96px 16px;
 }
 
 .benefit-title {
   color: var(--color-navyblue);
   font-family: Roboto;
-  font-size: 20px;
+font-size: 36px;
+  /* font-size: 20px; */
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  /* font-weight: 500; */
+  /* line-height: 1.2; */
+  line-height: 1.1;
+  /* letter-spacing: 0.02em; */
+  letter-spacing: 0.72px;
   margin-bottom: 8px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* width: 288px; */
 }
 
 .benefits-card {
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 24px;
-
-  /* width: 264px;
+  flex-wrap: wrap;
+  gap: 72px;
   flex-direction: column;
-  align-items: flex-start; */
+
+  /* width: 288px; */
+  
+  /* align-items: flex-start; */
 }
 
-.benefits-list {
+/* .benefits-list {
   width: calc((100% - 72px) / 3);
-}
+} */
 
 .benefit-text {
   color: var(--color-slate);
@@ -315,6 +328,7 @@ ul {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  /* width: 288px; */
 }
 
 .section-title {
@@ -540,6 +554,7 @@ p .footer-text {
   padding: 24px 0px;
   margin-bottom: 8px;
   height: 112px;
+  display: none;
 }
 
 .social-media-footer {
@@ -983,4 +998,13 @@ textarea {
 
 .modal-container-input {
   position: relative;
+}
+
+/* Версія для планшета */
+
+@media screen and (min-width: 768px) {
+  .container {
+max-width: 768px;
+
+
 }
