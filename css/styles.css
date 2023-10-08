@@ -406,7 +406,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 48px;
+  row-gap: 72px;
 }
 
 .project-container {
@@ -602,6 +602,12 @@ p .footer-text {
 .overlay-box {
   position: relative;
   overflow: hidden;
+  
+}
+
+.overlay-box img {
+width: 288px;
+height: 280px;
 }
 
 .overlay {
@@ -1038,6 +1044,16 @@ textarea {
     .person-card {
     width: calc((100% - 24px) / 2);
     }
+
+    .portfoliocards {
+        
+      width: calc((100% - 24px) / 2);
+    }
+
+    .overlay-box img {
+      width: 356px;
+      height: 300px;
+      }
 }
 
 /* Версія для десктопа */
@@ -1112,6 +1128,16 @@ textarea {
       }
 
       .section-portfolio {
-        padding: 120px 0;
+        padding: 120px 15px;
       }
+
+      .overlay-box img {
+        width: 360px;
+        height: 300px;
+        }
+
+        .portfoliolist {
+          column-gap: 24px;
+          row-gap: 48px;
+        }
 }
