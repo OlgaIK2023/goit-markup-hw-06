@@ -316,6 +316,13 @@ ul {
   /* align-items: flex-start; */
 }
 
+
+/* .benefits-list {
+    
+  flex-basis: 288px;
+
+  } */
+
 .benefit-text {
   color: var(--color-slate);
   font-family: Roboto;
@@ -346,16 +353,17 @@ ul {
 .section-team {
   text-align: center;
   background-color: var(--color-cloud);
-  padding: 120px 0;
+  padding: 96px 28px;
 }
 
 .section-portfolio {
-  padding: 120px 0;
+  padding: 96px 16px;
 }
 
 .personslist {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .person-card {
@@ -367,7 +375,9 @@ ul {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+
+  
 }
 
 .persondetails {
@@ -389,7 +399,7 @@ ul {
 }
 
 .person-text {
-  margin: 0;
+  margin-bottom: 8px;
 }
 
 .portfoliolist {
@@ -407,15 +417,14 @@ ul {
 
 .portfoliocards {
   background-color: var(--color-white);
-  /* position: relative;
-  overflow: hidden; */
+ 
   text-decoration: none;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: inline-block;
 
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
 
   padding-bottom: 0px;
   flex-direction: column;
@@ -1015,6 +1024,20 @@ textarea {
       text-align: left;
   
     }
+
+    .section-team {
+      padding: 96px 108px;
+    }
+
+    .personslist {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 64px 24px;
+    }
+    
+    .person-card {
+    width: calc((100% - 24px) / 2);
+    }
 }
 
 /* Версія для десктопа */
@@ -1049,5 +1072,46 @@ textarea {
 
       .benefits {
         padding: 120px 156px;
+      }
+
+      .person-card {
+        background: var(--color-white);
+      
+        border-radius: 0px 0px 4px 4px;
+      
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+          0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+          0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+      
+        width: calc((100% - 72px) / 4);
+      }
+
+      .personslist {
+        display: flex;
+        gap: 24px;
+      }
+
+      .section-team {
+        padding: 120px 0;
+      }
+
+      .person-text {
+        margin: 8px;
+      }
+
+
+      .portfoliocards {
+        
+        width: calc((100% - 48px) / 3);
+      
+        padding-bottom: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        flex-shrink: 0;
+      }
+
+      .section-portfolio {
+        padding: 120px 0;
       }
 }
