@@ -221,6 +221,17 @@ ul {
   margin: 0 auto;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_mob_2x.jpg);
+  }
+}
+
 .hero-title {
   color: var(--color-white);
 
@@ -1091,6 +1102,16 @@ textarea {
         margin: 36px auto 0;
       }
 
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero-section {
+          background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/people-office_tablet_2x.jpg);
+        }
+      }
       
 }
 
@@ -1195,6 +1216,16 @@ textarea {
           margin: 0 auto;
         }
 
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          .hero-section {
+            background-image: linear-gradient(
+              to bottom,
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/people-office_desktop_2x.jpg);
+          }
+        }
        
 
         .order-button {
