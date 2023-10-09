@@ -213,7 +213,7 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/officephoto.jpg);
+    url(../images/people-office_mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1076,11 +1076,22 @@ textarea {
 
       .hero-section {
         padding: 112px 0;
+
+
+        background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_tablet_1x.jpg);
+
       }
 
       .order-button {
         margin: 36px auto 0;
       }
+
+      
 }
 
 /* Версія для десктопа */
