@@ -207,7 +207,7 @@ ul {
 
 .hero-section {
   background-color: var(--color-navyblue);
-  padding: 72px 16px;
+  padding: 72px 0;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -1061,6 +1061,26 @@ textarea {
       .title-break {
         display: none;
       }
+
+      .hero-title {
+        color: var(--color-white);
+                
+        font-size: 56px;
+                 
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+      
+        max-width: 496px;
+        margin: 0 auto;
+      }
+
+      .hero-section {
+        padding: 112px 0;
+      }
+
+      .order-button {
+        margin: 36px auto 0;
+      }
 }
 
 /* Версія для десктопа */
@@ -1164,17 +1184,7 @@ textarea {
           margin: 0 auto;
         }
 
-        .hero-title {
-          color: var(--color-white);
-                  
-          font-size: 56px;
-                   
-          line-height: 1.07;
-          letter-spacing: 1.12px;
-        
-          max-width: 496px;
-          margin: 0 auto;
-        }
+       
 
         .order-button {
           margin: 48px auto 0;
