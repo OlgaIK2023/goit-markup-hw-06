@@ -91,6 +91,9 @@ ul {
   letter-spacing: 0.54px;
 
   margin-right: 76px;
+  margin-left: 16px;
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
 }
 
 .address {
@@ -186,17 +189,11 @@ ul {
 }
 
 .address-container {
-  background-color: var(--color-white);
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  display: none;
 }
 
 .navigation-container-list {
-  background-color: var(--color-white);
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  display: none;
 }
 
 .container {
@@ -221,14 +218,16 @@ ul {
   margin: 0 auto;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office_mob_2x.jpg);
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_mob_2x.jpg);
   }
 }
 
@@ -330,7 +329,6 @@ ul {
   /* align-items: flex-start; */
 }
 
-
 /* .benefits-list {
     
   flex-basis: 288px;
@@ -390,8 +388,6 @@ ul {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
   /* width: calc((100% - 72px) / 4); */
-
-  
 }
 
 .persondetails {
@@ -431,7 +427,7 @@ ul {
 
 .portfoliocards {
   background-color: var(--color-white);
- 
+
   text-decoration: none;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -616,12 +612,11 @@ p .footer-text {
 .overlay-box {
   position: relative;
   overflow: hidden;
-  
 }
 
 .overlay-box img {
-width: 288px;
-height: 280px;
+  width: 288px;
+  height: 280px;
 }
 
 .overlay {
@@ -1024,6 +1019,34 @@ textarea {
 /* Версія для планшета */
 
 @media screen and (min-width: 768px) {
+  .navigation-container-list {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .address-container {
+    background-color: var(--color-white);
+    display: block;
+    align-items: center;
+    padding: 16px 16px;
+  }
+
+  .header-logo {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .contacts-link {
+    padding: 0 0;
+  }
+
+  .contacts-link .email {
+    margin-bottom: 12px;
+  }
+
   .container {
     max-width: 768px;
   }
@@ -1031,93 +1054,98 @@ textarea {
   .benefits-card {
     flex-direction: row;
     gap: 72px 24px;
-          
   }
 
   .benefits-list {
-    
     flex-basis: calc((100% - 24px) / 2);
-    }
+  }
 
+  .benefit-title {
+    text-align: left;
+  }
 
-    .benefit-title {
-      text-align: left;
-  
-    }
+  .section-team {
+    padding: 96px 108px;
+  }
 
-    .section-team {
-      padding: 96px 108px;
-    }
+  .personslist {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
 
-    .personslist {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 64px 24px;
-    }
-    
-    .person-card {
+  .person-card {
     width: calc((100% - 24px) / 2);
+  }
+
+  .portfoliocards {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .overlay-box img {
+    width: 356px;
+    height: 300px;
+  }
+
+  .title-break {
+    display: none;
+  }
+
+  .hero-title {
+    color: var(--color-white);
+
+    font-size: 56px;
+
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+
+    max-width: 496px;
+    margin: 0 auto;
+  }
+
+  .hero-section {
+    padding: 112px 0;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_tablet_1x.jpg);
+  }
+
+  .order-button {
+    margin: 36px auto 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_tablet_2x.jpg);
     }
-
-    .portfoliocards {
-        
-      width: calc((100% - 24px) / 2);
-    }
-
-    .overlay-box img {
-      width: 356px;
-      height: 300px;
-      }
-
-      .title-break {
-        display: none;
-      }
-
-      .hero-title {
-        color: var(--color-white);
-                
-        font-size: 56px;
-                 
-        line-height: 1.07;
-        letter-spacing: 1.12px;
-      
-        max-width: 496px;
-        margin: 0 auto;
-      }
-
-      .hero-section {
-        padding: 112px 0;
-
-
-        background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office_tablet_1x.jpg);
-
-      }
-
-      .order-button {
-        margin: 36px auto 0;
-      }
-
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .hero-section {
-          background-image: linear-gradient(
-            to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-          ),
-          url(../images/people-office_tablet_2x.jpg);
-        }
-      }
-      
+  }
 }
 
 /* Версія для десктопа */
 
 @media screen and (min-width: 1158px) {
+  .address-container {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contacts-link {
+    padding: 24px 0;
+  }
+
   .container {
     max-width: 1158px;
   }
@@ -1128,107 +1156,102 @@ textarea {
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
-    
-    .benefits-list {
-    
-      flex-basis: calc((100% - 72px) / 4);
-    
-      }
 
-    .benefits-card {
-    
+  .benefits-list {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .benefits-card {
     gap: 24px;
-  
-      }
+  }
 
-      .icon-benefits-box {
-        display: flex;
-      }
+  .icon-benefits-box {
+    display: flex;
+  }
 
-      .benefits {
-        padding: 120px 156px;
-      }
+  .benefits {
+    padding: 120px 156px;
+  }
 
-      .person-card {
-        background: var(--color-white);
-      
-        border-radius: 0px 0px 4px 4px;
-      
-        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-          0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-          0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-      
-        width: calc((100% - 72px) / 4);
-      }
+  .person-card {
+    background: var(--color-white);
 
-      .personslist {
-        display: flex;
-        gap: 24px;
-      }
+    border-radius: 0px 0px 4px 4px;
 
-      .section-team {
-        padding: 120px 0;
-      }
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
-      .person-text {
-        margin: 8px;
-      }
+    width: calc((100% - 72px) / 4);
+  }
 
+  .personslist {
+    display: flex;
+    gap: 24px;
+  }
 
-      .portfoliocards {
-        
-        width: calc((100% - 48px) / 3);
-      
-        padding-bottom: 0px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 32px;
-        flex-shrink: 0;
-      }
+  .section-team {
+    padding: 120px 0;
+  }
 
-      .section-portfolio {
-        padding: 120px 156px;
-      }
+  .person-text {
+    margin: 8px;
+  }
 
-      .overlay-box img {
-        width: 360px;
-        height: 300px;
-        }
+  .portfoliocards {
+    width: calc((100% - 48px) / 3);
 
-        .portfoliolist {
-          column-gap: 24px;
-          row-gap: 48px;
-        }
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+  }
 
-        .hero-section {
-          background-color: var(--color-navyblue);
-          padding: 188px 0;
-          background-image: linear-gradient(
-              to bottom,
-              rgba(46, 47, 66, 0.7),
-              rgba(46, 47, 66, 0.7)
-            ),
-            url(../images/officephoto.jpg);
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
-          max-width: 1440px;
-          margin: 0 auto;
-        }
+  .section-portfolio {
+    padding: 120px 156px;
+  }
 
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          .hero-section {
-            background-image: linear-gradient(
-              to bottom,
-              rgba(46, 47, 66, 0.7),
-              rgba(46, 47, 66, 0.7)
-            ),
-            url(../images/people-office_desktop_2x.jpg);
-          }
-        }
-       
+  .overlay-box img {
+    width: 360px;
+    height: 300px;
+  }
 
-        .order-button {
-          margin: 48px auto 0;
-        }
+  .portfoliolist {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .hero-section {
+    background-color: var(--color-navyblue);
+    padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/officephoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_desktop_2x.jpg);
+    }
+  }
+
+  .order-button {
+    margin: 48px auto 0;
+  }
 }
