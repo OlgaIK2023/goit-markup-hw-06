@@ -238,6 +238,13 @@ ul {
   margin-bottom: 24px;
 }
 
+.menu-close-button:hover,
+.menu-close-button:focus {
+  background-color: var(--color-ocean);
+  border: none;
+  fill: var(--color-white);
+}
+
 .menu-link {
   color: var(--color-navyblue);
   font-family: Roboto;
@@ -292,6 +299,9 @@ gap: 40px;
   background-color: var(--color-ocean);
 }
 
+.menu-link:hover, .contacts-link-mob:hover, .menu-link:focus, .contacts-link-mob:focus {
+  color: var(--color-ocean);
+}
 
 .contacts-link-mob {
   display: block;
