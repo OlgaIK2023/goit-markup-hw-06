@@ -255,7 +255,6 @@ ul {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   text-decoration: none;
-  
 }
 
 .mob-menu-link:not(:last-child) {
@@ -267,13 +266,12 @@ ul {
 }
 
 .mob-menu-social-links {
-display: flex;
-gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .mob-menu-social-links .icon {
   fill: var(--color-cloud);
-  
 }
 
 .mob-menu-social-links .mob-li-link {
@@ -287,11 +285,9 @@ gap: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .link-menu {
   justify-content: center;
   align-items: center;
- 
 }
 
 .mob-menu-social-links .mob-li-link:hover,
@@ -299,7 +295,10 @@ gap: 40px;
   background-color: var(--color-ocean);
 }
 
-.menu-link:hover, .contacts-link-mob:hover, .menu-link:focus, .contacts-link-mob:focus {
+.menu-link:hover,
+.contacts-link-mob:hover,
+.menu-link:focus,
+.contacts-link-mob:focus {
   color: var(--color-ocean);
 }
 
@@ -316,8 +315,6 @@ gap: 40px;
   line-height: 1.2;
   letter-spacing: 0.4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  
 }
 
 .mob-menu-contacts {
@@ -329,7 +326,6 @@ gap: 40px;
 }
 
 /* Основна частина сайту */
-
 
 .container {
   max-width: 1158px;
@@ -608,11 +604,9 @@ gap: 40px;
 
 .footer {
   background-color: var(--color-navyblue);
-  padding: 100px 0;
-}
-
-.subscribe {
-  margin-left: 80px;
+  padding: 96px 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-logo {
@@ -646,7 +640,7 @@ gap: 40px;
   color: var(--color-cloud);
 
   font-size: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 72px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
@@ -660,6 +654,12 @@ p .footer-text {
 .social-links {
   display: flex;
   justify-content: center;
+  gap: 24px;
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: left;
   gap: 24px;
 }
 
@@ -715,14 +715,11 @@ p .footer-text {
   margin-bottom: 16px;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
+.footer-links-container {
+  margin-bottom: 72px;
 }
 
-.logo-text {
-  margin-right: 120px;
-}
+
 
 .header-link {
   position: relative;
@@ -1017,7 +1014,7 @@ textarea {
   border-radius: 4px;
   color: var(--color-white);
   background: var(--color-iris);
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   text-align: center;
   align-items: center;
@@ -1029,6 +1026,7 @@ textarea {
 
 .footer-form {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -1037,7 +1035,7 @@ textarea {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   border-radius: 4px;
   color: var(--color-white);
@@ -1187,12 +1185,11 @@ textarea {
   }
 
   .contacts-link {
-  
-font-size: 12px;
+    font-size: 12px;
 
-font-weight: 400;
-line-height: 1.16;
-letter-spacing: 0.48px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
   }
 
   .container {
@@ -1278,6 +1275,16 @@ letter-spacing: 0.48px;
         url(../images/people-office_tablet_2x.jpg);
     }
   }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-links-container {
+    display: block;
+  }
 }
 
 /* Версія для десктопа */
@@ -1294,15 +1301,13 @@ letter-spacing: 0.48px;
     padding: 24px 0;
   }
 
-
   .contacts-link.email {
     margin-bottom: 0;
   }
 
   .contacts-link {
-  
     font-size: 16px;
-    
+
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -1415,5 +1420,50 @@ letter-spacing: 0.48px;
 
   .order-button {
     margin: 48px auto 0;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .subscribe {
+    margin-left: 80px;
+    
+  }
+
+  .social-links .link,
+  .link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-links-footer {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  
+
+  .footer-text {
+    margin-bottom: 16px;
+  }
+
+  .footer-links-container {
+    margin-bottom: 0;
+  }
+
+  .form-input-footer {
+    width: 264px;
+  }
+
+  .logo-text {
+    margin-right: 120px;
   }
 }
