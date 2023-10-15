@@ -329,7 +329,7 @@ ul {
 
 .container {
   max-width: 1158px;
-  /* padding: 0 15px; */
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -496,11 +496,11 @@ ul {
 .section-team {
   text-align: center;
   background-color: var(--color-cloud);
-  padding: 96px 28px;
+  padding: 96px 0;
 }
 
 .section-portfolio {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .personslist {
@@ -604,9 +604,8 @@ ul {
 
 .footer {
   background-color: var(--color-navyblue);
-  padding: 96px 16px;
-  display: flex;
-  flex-direction: column;
+  
+  
 }
 
 .footer-logo {
@@ -660,7 +659,7 @@ p .footer-text {
 .social-links-footer {
   display: flex;
   justify-content: left;
-  gap: 24px;
+  
 }
 
 .footer-links-container .social-links {
@@ -1182,7 +1181,8 @@ textarea {
     background-color: var(--color-white);
     display: block;
     align-items: center;
-    padding: 16px 16px;
+    padding: 16px 0;
+    margin-right: 16px;
   }
 
   .header-logo {
@@ -1311,6 +1311,11 @@ textarea {
     height: 584px;
     margin: 0;
   }
+
+  .footer {
+    padding: 97px 0;
+  }
+  
 }
 
 /* Версія для десктопа */
@@ -1363,7 +1368,7 @@ textarea {
   }
 
   .benefits {
-    padding: 120px 156px;
+    padding: 120px 0;
   }
 
   .person-card {
@@ -1387,9 +1392,7 @@ textarea {
     padding: 120px 0;
   }
 
-  .person-text {
-    margin: 8px;
-  }
+ 
 
   .portfoliocards {
     width: calc((100% - 48px) / 3);
@@ -1402,7 +1405,7 @@ textarea {
   }
 
   .section-portfolio {
-    padding: 120px 156px;
+    padding: 120px 0;
   }
 
   .overlay-box img {
@@ -1472,7 +1475,7 @@ textarea {
   .social-links-footer {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
   }
 
   
@@ -1493,6 +1496,15 @@ textarea {
     margin-right: 120px;
   }
 
+  .address-container {
+    margin-right: 0;
+    padding: 0;
+  }
   
+  .logo-and-socials {
+   
+    gap: 0px;
+  }
 
 }
+
