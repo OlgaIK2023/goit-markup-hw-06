@@ -471,7 +471,7 @@ ul {
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
   /* width: 288px; */
@@ -1169,7 +1169,6 @@ textarea {
 }
 
 
-
   .navigation-container-list {
     background-color: var(--color-white);
     display: flex;
@@ -1189,6 +1188,7 @@ textarea {
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-right: 120px;
   }
 
   .contacts-link {
@@ -1199,9 +1199,13 @@ textarea {
     display: none;
   }
 
-  .contacts-link.email {
+  /* .contacts-link.email {
     margin-bottom: 12px;
-  }
+  } */
+
+  /* .contacts-header-links {
+    gap: 12px;
+  } */
 
   .contacts-link {
     font-size: 12px;
@@ -1213,6 +1217,7 @@ textarea {
 
   .container {
     max-width: 768px;
+    padding: 0 16px;
   }
 
   .benefits-card {
@@ -1315,7 +1320,7 @@ textarea {
   .footer {
     padding: 97px 0;
   }
-  
+
 }
 
 /* Версія для десктопа */
@@ -1506,5 +1511,8 @@ textarea {
     gap: 0px;
   }
 
+  .benefit-text {
+    font-weight: 400;
+  }
 }
 
