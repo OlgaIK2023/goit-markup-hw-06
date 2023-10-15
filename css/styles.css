@@ -427,7 +427,7 @@ ul {
 } */
 
 .benefits {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .benefit-title {
@@ -1234,13 +1234,17 @@ textarea {
   }
 
   .section-team {
-    padding: 96px 108px;
+    padding: 96px 0;
   }
 
   .personslist {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
+    display: flex;
+    justify-content: center;
+
+    }
   }
 
   .person-card {
@@ -1254,6 +1258,14 @@ textarea {
   .overlay-box img {
     width: 356px;
     height: 300px;
+  }
+
+ 
+
+  .person-card {
+    width: 264px;
+    
+    
   }
 
   .title-break {
@@ -1389,8 +1401,10 @@ textarea {
   }
 
   .personslist {
-    display: flex;
-    gap: 24px;
+    gap: 0 24px;
+    
+    flex-wrap: nowrap;
+    
   }
 
   .section-team {
