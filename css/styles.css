@@ -204,8 +204,7 @@ ul {
   margin-right: 16px;
 }
 
-.open-menu-icon {
-}
+
 
 .mob-menu {
   position: fixed;
@@ -639,16 +638,14 @@ ul {
   color: var(--color-cloud);
 
   font-size: 16px;
-  margin-bottom: 72px;
+ 
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
   width: 264px;
 }
 
-p .footer-text {
-  margin-bottom: 16px;
-}
+
 
 .social-links {
   display: flex;
@@ -659,6 +656,7 @@ p .footer-text {
 .social-links-footer {
   display: flex;
   justify-content: left;
+  gap: 16px;
   
 }
 
@@ -714,9 +712,9 @@ p .footer-text {
   margin-bottom: 16px;
 }
 
-.footer-links-container {
+/* .footer-links-container {
   margin-bottom: 72px;
-}
+} */
 
 
 
@@ -995,6 +993,7 @@ textarea {
 
 .subscribe-title {
   color: var(--color-white);
+  text-align: center;
 
   font-size: 16px;
 
@@ -1021,6 +1020,7 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: none;
+  margin: 0 auto;
 }
 
 .footer-form {
@@ -1157,15 +1157,65 @@ textarea {
   justify-content: center;
 }
 
+.footer {
+  padding: 97px 0;
+}
+
+.logo-text, .footer-links-container {
+  margin-bottom: 72px;
+}
+
+.person-card {
+  width: 264px;
+  
+  
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.footer-text {
+  text-align: left;
+}
+
+.social-media-footer {
+  text-align: center;
+}
+
+.social-links-footer {
+    
+  justify-content: center;
+  
+ 
+}
 
 
 /* Версія для планшета */
 
 @media screen and (min-width: 768px) {
 
+  .subscribe-button {
+    margin: 0;
+  }
+
+  .subscribe-title {
+    text-align: left;
+  }
+
+  .social-media-footer {
+    text-align: left;
+  }
+
+  .logo-text {
+    text-align: left;
+  }
+  
+
 .logo-and-socials {
   display: flex;
   gap: 24px;
+  margin-left: 108px;
 }
 
 
@@ -1181,7 +1231,7 @@ textarea {
     display: block;
     align-items: center;
     padding: 16px 0;
-    margin-right: 16px;
+    
   }
 
   .header-logo {
@@ -1199,13 +1249,11 @@ textarea {
     display: none;
   }
 
-  /* .contacts-link.email {
-    margin-bottom: 12px;
-  } */
+  
 
-  /* .contacts-header-links {
-    gap: 12px;
-  } */
+  .contacts-header-links.email {
+    margin-bottom: 12px;
+  }
 
   .contacts-link {
     font-size: 12px;
@@ -1245,15 +1293,18 @@ textarea {
     justify-content: center;
 
     }
-  }
+  
 
   .person-card {
-    width: calc((100% - 24px) / 2);
+    /* width: calc((100% - 24px) / 2); */
+    width: 264px;
   }
 
   .portfoliocards {
     width: calc((100% - 24px) / 2);
   }
+
+  
 
   .overlay-box img {
     width: 356px;
@@ -1262,11 +1313,7 @@ textarea {
 
  
 
-  .person-card {
-    width: 264px;
-    
-    
-  }
+  
 
   .title-break {
     display: none;
@@ -1319,7 +1366,8 @@ textarea {
   }
 
   .footer-links-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .modal {
@@ -1329,9 +1377,22 @@ textarea {
     margin: 0;
   }
 
-  .footer {
-    padding: 97px 0;
+  
+
+  .logo-and-socials {
+    margin-bottom: 72px;
   }
+
+  .subscribe {
+    margin-left: 108px;
+    
+  }
+
+  .logo-text, .footer-links-container {
+    margin-bottom: 0;
+  }
+
+
 
 }
 
@@ -1492,16 +1553,17 @@ textarea {
   }
 
   .social-links-footer {
-    display: flex;
+    
     justify-content: center;
-    gap: 16px;
+    
+   
   }
 
   
 
-  .footer-text {
-    margin-bottom: 16px;
-  }
+  
+
+  
 
   .footer-links-container {
     margin-bottom: 0;
@@ -1527,6 +1589,14 @@ textarea {
 
   .benefit-text {
     font-weight: 400;
+  }
+
+  .contacts-header-links.email {
+    margin-bottom: 0;
+  }
+
+  .logo-and-socials {
+    margin-left: 0;
   }
 }
 
