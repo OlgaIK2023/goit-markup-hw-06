@@ -213,7 +213,7 @@ ul {
   background-color: var(--color-white);
   width: 100vw;
   height: 100vh;
-  padding: 24px 24px 40px 16px;
+  padding: 72px 24px 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -234,7 +234,9 @@ ul {
   background-color: var(--color-white);
   border: 1px solid;
   border-color: var(--color-cornflower);
-  margin-bottom: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .menu-close-button:hover,
@@ -260,9 +262,7 @@ ul {
   margin-bottom: 40px;
 }
 
-.mob-menu-list {
-  margin-bottom: 50px;
-}
+
 
 .mob-menu-social-links {
   display: flex;
@@ -273,7 +273,7 @@ ul {
   fill: var(--color-cloud);
 }
 
-.mob-menu-social-links .mob-li-link {
+.link-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,10 +318,15 @@ ul {
 
 .mob-menu-contacts {
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.contacts-link-mob.tel {
-  margin-bottom: 24px;
+
+
+.menu-link.current-menu, .contacts-link-mob.tel {
+  color: var(--color-ocean);
 }
 
 /* Основна частина сайту */
@@ -1201,6 +1206,10 @@ textarea {
 /* Версія для планшета */
 
 @media screen and (min-width: 768px) {
+
+  .mob-menu {
+    display: none;
+  }
 
   .form-input {
     width: 360px;
