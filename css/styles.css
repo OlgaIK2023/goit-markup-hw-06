@@ -513,6 +513,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 72px;
+  align-items: center;
 }
 
 .person-card {
@@ -1243,7 +1244,7 @@ textarea {
 .logo-and-socials {
   display: flex;
   gap: 24px;
-  margin-left: 108px;
+  
 }
 
 
@@ -1411,22 +1412,32 @@ textarea {
     margin-bottom: 72px;
   }
 
-  .subscribe {
-    margin-left: 108px;
-    
-  }
+  
 
   .logo-text, .footer-links-container {
     margin-bottom: 0;
   }
 
-
+.footer .container {
+  width: 584px;
+  
+}
 
 }
 
 /* Версія для десктопа */
 
 @media screen and (min-width: 1158px) {
+
+  .footer .container {
+    width: 1158px;
+    
+  }
+
+  .logo-and-socials {
+    margin-bottom: 0px;
+  }
+
   .address-container {
     background-color: var(--color-white);
     display: flex;
